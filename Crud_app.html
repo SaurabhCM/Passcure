@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-700 text-white">
+    <div id="container" class="container px-4 py-4 space-y-10">
+        <h1 class="heading text-4xl font-bold font-sans flex justify-center">CRUD Application</h1>
+        <div id="form" class=" main flex justify-center">
+            <form id="student-form" action="#">
+                <label for="username">Username</label><br>
+                <input class="cursor-text w-full px-2 py-1 text-blue-600 rounded-2xl" type="text" name="uname"
+                    id="username" placeholder="Enter the Username"><br>
+
+                <label for="pass">Password</label><br>
+                <input class="cursor-text w-96 px-2 py-1 text-blue-600 rounded-2xl" type="password" name="password"
+                    id="pass" placeholder="Enter the Password"><br>
+
+                <label for="sname">Name of Site</label><br>
+                <input class="cursor-text w-96 px-2 py-1 text-blue-600 rounded-2xl" type="text" name="site-name"
+                    id="sname" placeholder="Enter the Sites's Name"><br>
+
+                <div class="py-5" id="button">
+                    <input class="bg-green-700 px-2 py-2 rounded-2xl" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="w-full flex justify-center">
+            <!-- w-1\2 h-4 -->
+            <table>
+                <thead>
+                    <tr class="bg-gray-900">
+                        <th class="px-8 py-4">Username</th>
+                        <th class="px-8 py-4">Password</th>
+                        <th class="px-8 py-4">Site Name</th>
+                        <th class="px-8 py-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list" class="bg-gray-500">
+                    <tr>
+                        <td class="px-8 py-4">Saurabh</td>
+                        <td class="px-8 py-4">S123</td>
+                        <td class="px-8 py-4">gugul.com</td>
+                        <td class=" space-x-6 px-4">
+                            <a class="bg-yellow-500 px-3 py-1 rounded-xl" href="#">Edit</a>
+                            <a class="bg-red-500 p-1 rounded-xl" href="#">Delete<a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="crud.js"></script>
+</body>
+
+</html>
